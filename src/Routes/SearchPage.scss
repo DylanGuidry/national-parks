@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Jomolhari&family=Playfair+Display:wght@500&family=Raleway:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Jomolhari&family=Josefin+Sans:wght@700&family=Londrina+Solid&family=Playfair+Display:wght@500&family=Raleway:wght@300;500&display=swap');
+
+body{
+    background-color: #222222;
+}
+
+.Website-Search{
+    background-image: url(../Images/Mountains-Park.jpg);
+    height: 70vh;
+}
+
+.Explore-Parks{
+    height: 70vh;
+    margin-left: 17vw;
+    margin-top: 25vh;
+    position: absolute;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10vw;
+    text-shadow: #353535 2px 2px 40px;
+}

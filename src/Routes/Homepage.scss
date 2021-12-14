@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Jomolhari&family=Playfair+Display:wght@500&family=Raleway:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Jomolhari&family=Josefin+Sans:wght@700&family=Londrina+Solid&family=Playfair+Display:wght@500&family=Raleway:wght@300;500&display=swap');
+
+.Website{
+    background-image: url(../Images/BryceCanyon.jpg);
+    background-size: 1920px 1080px;
+}
+
+.Headline{
+    color: white;
+    font-size: 4rem;
+    padding-left: 10vw;
+    padding-top: 5vh;
+    text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.63);
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+.Container-See{
+    color: #ffffff;
+    font-size: 1rem;
+    padding-left: 14vw;
+    margin: 0;
+    padding-top: 29vh;
+    text-shadow: 2px 2px 10px black;
+}
+
+.Container-See:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    margin-left: -50px;
+    margin-top: 10px;
+    background: rgb(255, 255, 255);
+    text-shadow: 2px 2px 10px black;
+}
+
+.Button-Explore{
+    background-color: #000000e7;
+    border: 1px solid #000000;
+    border-color: white;
+    color: white;
+    font-size: 1.5rem;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 2px 10px black;
+    // width: 150px;
+    // height: 40px;
+    margin-left: 10vw;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+}
+
+.Button-Explore:hover{
+    background-color: #000000a9;
+}
+
+.text-in-button{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.text-in-button:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    margin-left: 165px;
+    background: white;
+}
+
+.Bryce-Canyon{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    padding-top: 24vh;
+    padding-left: 2vw;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.Images{
+    width: 432px;
+    height: 243px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.63);
+}
+
+.Image-Card{
+    margin-top: 20px;
+    padding: 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.63);
+    background-color: rgba(0, 0, 0, 0.61);
+    border: 1px solid #000000;
+}
+
+.Image-Card:hover{
+    background-color: rgba(252, 252, 252, 0.61);
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.63);
+}
+
+.Image-Card:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.Overall-Images{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-left: 300px;
+    position: relative;
+}
+
+.Content{
+    display: flex;
+    flex-direction: row;
+}
+
+.top-right{
+    position: absolute; 
+    top: 50px; 
+    left: 660px; 
+    width: 0; 
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.top-right-yellow{
+    position: absolute; 
+    top: 320px; 
+    left: 645px; 
+    width: 0; 
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.top-right-arches{
+    position: absolute; 
+    top: 590px; 
+    left: 660px; 
+    width: 0; 
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.Explore-Your{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+.animate {
+    -webkit-animation-duration: 1s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.one {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    }
+
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+    @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+    .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
