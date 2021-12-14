@@ -16,6 +16,7 @@ const SearchBarv2 = () => {
             .then(res => res.json())
             .then(searchData => {
                 setSearchResults(searchData.data)
+                console.log(searchData.data)
             })
     }
 
@@ -23,15 +24,15 @@ const SearchBarv2 = () => {
         <>
             <div class="search-box fadeInUp animate one">
                 <form onSubmit={handleSubmit}>
-                    <input class='Search-Input fadeInUp animate one' onChange={(e) => handleChange(e)} value={searchInput} type="text" placeholder='Search by State Code...'></input>
+                    <input class='Search-Input fadeInUp animate one' onChange={(e) => handleChange(e)} value={searchInput} type="text" placeholder='Search by State Abbreviation...'></input>
                     <i id="icon" class="search"></i>
                 </form>
             </div>
             {searchResults.map(result => {
                 console.log(result)
                 return (
-                    <div>
-                        <div>{result.fullName}</div>
+                    <div className='Result-Container'>
+                        <div className='Results'>{result.name}</div>
                     </div>
                 )
             })}

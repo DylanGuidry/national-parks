@@ -5,7 +5,7 @@ import Footer from '../Components/Footer.js';
 import './SearchPage.scss';
 import SearchBarv2 from '../Components/SearchBarv2.js';
 
-const SearchPagev2 = () => {
+const SearchPage = () => {
     return (
         <>
             <section>
@@ -14,7 +14,7 @@ const SearchPagev2 = () => {
             <section class='Website-Search'>
                 <h1 class='Explore-Parks'>Explore Parks</h1>
             </section>
-            <section>
+            <section class='Seraching'>
                 <SearchBarv2 />
             </section>
             <Footer />
@@ -22,4 +22,4 @@ const SearchPagev2 = () => {
     )
 }
 
-export default SearchPagev2
+export default SearchPage

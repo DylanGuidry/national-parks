@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Navbar.scss'
-import Mountain from '../Images/mountains.png'
+import Mountain from '../Images/mountains-min.png'
 
 export class Navbar extends Component {
     render() {

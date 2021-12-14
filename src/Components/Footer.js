@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.scss'
-import Mountain from '../Images/mountains.png'
+import Mountain from '../Images/mountains-min.png'
 
 const Footer = () => {
     return (    

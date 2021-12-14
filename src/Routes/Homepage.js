@@ -1,9 +1,9 @@
 import React from 'react'
 import Navbar from '../Components/Navbar';
 import '../Routes/Homepage.scss';
-import Yosemite from '../Images/Yosemite.jpg';
-import Yellowstone from '../Images/Yellowstone.jpg';
-import Arches from '../Images/Arches.jpg';
+import Yosemite from '../Images/Yosemite-min.jpg';
+import Yellowstone from '../Images/Yellowstone-min.jpg';
+import Arches from '../Images/Arches-min.jpg';
 import Footer from '../Components/Footer.js';
 
 export const Homepage = () => {
