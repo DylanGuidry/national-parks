@@ -8,12 +8,11 @@ body{
 .Website-Search{
     background-image: url(../Images/Mountains-Park-min.jpg);
     height: 70vh;
+    display: flex;
+    justify-content: center;
 }
 
 .Explore-Parks{
-    height: 70vh;
-    margin-left: 17vw;
-    margin-top: 25vh;
     position: absolute;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
@@ -23,4 +22,7 @@ body{
 
 .Seraching{
     padding: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
