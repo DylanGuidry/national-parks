@@ -1,16 +1,20 @@
 import React, { useState } from 'react'
+import { useParams, useNavigate, Link } from "react-router-dom";
 import '../Components/SearchBarv2.scss'
 import Search from '../Images/Search-Icon.png'
+import Details from './Details';
+
 
 const SearchBarv2 = () => {
     const [searchInput, setSearchInput] = useState('')
     const [searchResults, setSearchResults] = useState([])
+    const navigate = useNavigate();
 
     function handleChange(e) {
         setSearchInput(e.target.value)
     }
 
-    function handleSubmit(e) {
+function handleSubmit(e) {
         e.preventDefault()
         // navigate(`/parks/${searchInput}`)
         fetch(`https://developer.nps.gov/api/v1/parks?stateCode=${searchInput}&api_key=dB1g9bsxb3Z0lvyFbph5S0CF7z7UbmJp7NbDEWEd`)
@@ -18,7 +22,14 @@ const SearchBarv2 = () => {
             .then(searchData => {
                 setSearchResults(searchData.data)
                 // console.log(searchData.data)
-            })
+                }
+            )
+    }   
+    
+    
+    function handleClick(e) {
+        console.log('Fired')
+        // navigate(`/park/${searchData.id}`)  
     }
 
     return (
@@ -86,13 +97,12 @@ const SearchBarv2 = () => {
                     {searchResults.map(result => {
                         console.log(result)
                         const image = result.images[0].url;
-                        // console.log(result.images[0].url)
                         return (
                             <section>
                                 <div className='Result-Container'>
                                     <section class='Image-Container fadeInUp animate one'>
                                         <div className='Results'>{result.name}</div>
-                                        <img class='Images-Search' src={image} alt='park'></img>
+                                        <Link to={`/park/${result.id}`}><img onClick={handleClick} class='Images-Search' src={image} alt='park'></img></Link>
                                     </section>
                                 </div>
                             </section>

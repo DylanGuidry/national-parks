@@ -10,7 +10,7 @@ export class Navbar extends Component {
                     <h1 class='Title-Name'><img class='Mountain-Image' src={Mountain}/>PRESERVE PROJECT</h1>
                     <ul class='Directories'>
                         <li><a href='/'>Home</a></li>
-                        <li>About</li>
+                        <li><a>About</a></li>
                         <li><a href='/explore'>Explore</a></li>
                     </ul>
                 </section>

@@ -12,7 +12,7 @@ const Footer = () => {
                 </section>
                 <h2 class='Copy'>Copyright &copy; 2021</h2>
             <section>
-                <h1>Website Created By <a class='Portfolio-Link' href='https://dylanguidry.netlify.app/'>Dylan Guidry</a></h1>
+                <h1 class='Created-By' >Website Created By <a class='Portfolio-Link' href='https://dylanguidry.netlify.app/'>Dylan Guidry</a></h1>
             </section>
             </section>
         </section>

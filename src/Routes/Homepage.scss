@@ -3,7 +3,10 @@
 
 .Website{
     background-image: url(../Images/BryceCanyon-min.jpg);
-    background-size: 1920px 1080px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .Headline{
@@ -14,7 +17,7 @@
     text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.63);
     font-family: 'Josefin Sans', sans-serif;
     margin: 0;
-    margin-bottom: 100px;
+    margin-bottom: 10%;
 }
 
 .Container-See{
@@ -131,8 +134,8 @@ a{
 
 .top-right{
     position: absolute; 
-    top: 50px; 
-    left: 660px; 
+    top: 5%;
+    left: 88%;
     width: 0; 
     color: white;
     font-family: 'Josefin Sans', sans-serif;
@@ -140,8 +143,8 @@ a{
 
 .top-right-yellow{
     position: absolute; 
-    top: 320px; 
-    left: 645px; 
+    top: 34%;
+    left: 86%;
     width: 0; 
     color: white;
     font-family: 'Josefin Sans', sans-serif;
@@ -149,8 +152,8 @@ a{
 
 .top-right-arches{
     position: absolute; 
-    top: 590px; 
-    left: 660px; 
+    top: 63%;
+    left: 88%;
     width: 0; 
     color: white;
     font-family: 'Josefin Sans', sans-serif;

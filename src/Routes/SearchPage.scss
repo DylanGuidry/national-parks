@@ -8,8 +8,13 @@ body{
 .Website-Search{
     background-image: url(../Images/Mountains-Park-min.jpg);
     height: 70vh;
+    width: 100%;
     display: flex;
     justify-content: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .Explore-Parks{
