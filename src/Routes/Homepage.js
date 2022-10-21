@@ -5,8 +5,11 @@ import Yosemite from '../Images/Yosemite-min.jpg';
 import Yellowstone from '../Images/Yellowstone-min.jpg';
 import Arches from '../Images/Arches-min.jpg';
 import Footer from '../Components/Footer.js';
+import { useParams } from 'react-router-dom';
 
 export const Homepage = () => {
+
+
     return (
         <section class='Website'>
             <section>

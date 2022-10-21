@@ -30,8 +30,10 @@ return (
             const emails = parks.contacts.emailAddresses[0].emailAddress
             return (
                 <div>
-                    <div class='font-details'>
-                        {parks.fullName}
+                    <div class='text-align'>
+                        <div class='font-details'>
+                            {parks.name}
+                        </div>
                     </div>
                     <img class="Image" src={image}></img>
                         <div class='des-box'>
@@ -95,8 +97,6 @@ return (
                                         <p class='park-fun'>5. {parks.activities[4].name}</p>
                                         <p class='park-fun'>6. {parks.activities[5].name}</p>
                                         <p class='park-fun'>7. {parks.activities[6].name}</p>
-                                        <p class='park-fun'>8. {parks.activities[7].name}</p>
-                                        <p class='park-fun'>9. {parks.activities[8].name}</p>
                                     </div>
                             </div>
                     </div>
