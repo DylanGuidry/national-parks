@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Jomolhari&family=Playfair+Display:wght@500&family=Raleway:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Jomolhari&family=Josefin+Sans:wght@700&family=Londrina+Solid&family=Playfair+Display:wght@500&family=Raleway:wght@300;500&display=swap');
+
+
+.animate {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.one {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    }
+
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+    @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+    .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+.Image {
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover; 
+    // object-position: 0px 0px;
+}
+
+.Portrait {
+    width: 70%;
+    border: 2px solid black;
+}
+
+.Portrait:hover {
+    opacity: 95%;
+}
+
+.about-us-container {
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-left: 5%;
+}
+
+.overall-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.meeting-the-dev {
+    color: white;
+    font-size: 4rem;
+    text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.63);
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 0;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+.about-us-des {
+    border: 2px solid white;
+    margin-top: 5%;
+    padding: 2%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.781);
+    width: 40%;
+}
+
+.about-us-des:hover{
+    background-color: rgba(24, 24, 24, 0.733);
+}
+
+.all-about-dev {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.link-box {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 20%;
+    justify-content: center;
+}
+
+.Linked-ones {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    text-align: center;
+    text-decoration: underline;
+}
