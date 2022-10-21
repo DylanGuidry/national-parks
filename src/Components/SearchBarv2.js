@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useParams, useNavigate, Link } from "react-router-dom";
 import '../Components/SearchBarv2.scss'
 import Search from '../Images/Search-Icon.png'
-import Details from './Details';
 
 
 const SearchBarv2 = () => {
