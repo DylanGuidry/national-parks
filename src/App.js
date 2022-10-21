@@ -10,6 +10,7 @@ import {
 import Homepage from './Routes/Homepage';
 import SearchPage from './Routes/SearchPage';
 import Details from './Components/Details';
+import About from './Routes/About';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/' element={<Homepage />} />
         <Route path='/explore' element={<SearchPage />} />
         <Route path ='/park/:id' element={<Details />}/>
+        <Route path='about' element={<About />}/>
       </Routes>
     </BrowserRouter>
   );
