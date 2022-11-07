@@ -58,7 +58,6 @@ return (
                                     </div>
                                     <div class="Info-Box"> 
                                         <p class='fee-details'> Entrance Fee: ${parks.entranceFees[0].cost} - <i>{parks.entranceFees[0].description}</i></p>
-                                        {/* <p class='fee-details'> Entrance Pass: ${parks.entrancePasses[0].cost} - <i>{parks.entrancePasses[0].description}</i></p> */}
                                     </div>
                             </div>
                             <div class="Info-Container">
