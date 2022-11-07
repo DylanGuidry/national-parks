@@ -5,7 +5,7 @@ const Carousel= () => {
 return (
     <Carousel>
         <div>
-            
+            Hello
         </div>
     </Carousel>
 )

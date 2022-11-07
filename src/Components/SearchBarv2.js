@@ -28,7 +28,7 @@ function handleSubmit(e) {
     
     function handleClick(e) {
         console.log('Fired')
-        // navigate(`/park/${searchData.id}`)  
+        // navigate(`/park/${searchData.id}`)
     }
 
     return (
