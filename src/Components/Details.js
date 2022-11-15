@@ -23,11 +23,11 @@ fetch(`https://developer.nps.gov/api/v1/parks?stateCode=&api_key=dB1g9bsxb3Z0lvy
 
 return (
     <div class="fadeInUp animate one">
-        {parkID.map(parks => {
+        {parkID?.length && parkID.map(parks => {
             console.log(parks)
-            const image = parks.images[0].url;
-            const phoneNumber = parks.contacts.phoneNumbers[0].phoneNumber;
-            const emails = parks.contacts.emailAddresses[0].emailAddress
+            const image = parks.images[0]?.url;
+            const phoneNumber = parks.contacts.phoneNumbers[0]?.phoneNumber;
+            const emails = parks.contacts.emailAddresses[0]?.emailAddress
             return (
                 <div>
                     <div class='text-align'>
@@ -57,8 +57,8 @@ return (
                                         </h1>
                                     </div>
                                     <div class="Info-Box"> 
-                                        <p class='fee-details'> Entrance Fee: ${parks.entranceFees[0].cost} - <i>{parks.entranceFees[0].description}</i></p>
-                                        {/* <p class='fee-details'> Entrance Pass: ${parks.entrancePasses[0].cost} - <i>{parks.entrancePasses[0].description}</i></p> */}
+                                        <p class='fee-details'> Entrance Fee: ${parks.entranceFees[0]?.cost} - <i>{parks.entranceFees[0]?.description}</i></p>
+                                        <p class='fee-details'> Entrance Pass: ${parks.entrancePasses[0]?.cost} - <i>{parks.entrancePasses[0]?.description}</i></p>
                                     </div>
                             </div>
                             <div class="Info-Container">
@@ -79,8 +79,8 @@ return (
                                     </h1>
                                 </div>
                                 <div class="Info-Box">
-                                    <p class='fee-details'>{parks.operatingHours[0].name}</p>
-                                    <p class='fee-details'>{parks.operatingHours[0].description}</p>
+                                    <p class='fee-details'>{parks.operatingHours[0]?.name}</p>
+                                    <p class='fee-details'>{parks.operatingHours[0]?.description}</p>
                                 </div>
                             </div>
                             <div class="Info-Container-Fee">
@@ -90,13 +90,13 @@ return (
                                         </h1>
                                     </div>
                                     <div class="Info-Box"> 
-                                        <p class='park-fun'>1. {parks.activities[0].name}</p>
-                                        <p class='park-fun'>2. {parks.activities[1].name}</p>
-                                        <p class='park-fun'>3. {parks.activities[2].name}</p>
-                                        <p class='park-fun'>4. {parks.activities[3].name}</p>
-                                        <p class='park-fun'>5. {parks.activities[4].name}</p>
-                                        <p class='park-fun'>6. {parks.activities[5].name}</p>
-                                        <p class='park-fun'>7. {parks.activities[6].name}</p>
+                                        <p class='park-fun'>1. {parks.activities[0]?.name}</p>
+                                        <p class='park-fun'>2. {parks.activities[1]?.name}</p>
+                                        <p class='park-fun'>3. {parks.activities[2]?.name}</p>
+                                        <p class='park-fun'>4. {parks.activities[3]?.name}</p>
+                                        <p class='park-fun'>5. {parks.activities[4]?.name}</p>
+                                        <p class='park-fun'>6. {parks.activities[5]?.name}</p>
+                                        <p class='park-fun'>7. {parks.activities[6]?.name}</p>
                                     </div>
                             </div>
                     </div>
