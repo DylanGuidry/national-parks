@@ -194,3 +194,15 @@
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
 }
+
+//---------- Mobile 
+
+@media (max-width: 375px) {
+    .search-box {
+        width: 70%;
+        flex-direction: column;
+    }
+    .Search-Input {
+        margin-left: 90px;
+    }
+}
