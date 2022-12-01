@@ -202,3 +202,12 @@ a{
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
 }
+
+//------------------------Mobile
+
+@media (max-width: 1210px) {
+    .Overall-Images {
+        display: none;
+        visibility: hidden;
+    }
+}   

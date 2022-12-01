@@ -123,3 +123,37 @@
     text-align: center;
     text-decoration: underline;
 }
+
+//------------------------Mobile
+
+@media (max-width: 414px) {
+    .overall-container {
+        flex-direction: column;
+        width: 90vw;
+    }
+    .Portrait {
+        width: 100%;
+    }
+    .all-about-dev {
+        width: 100%;
+    }
+    .meeting-the-dev {
+        width: 100%;
+        font-size: x-large;
+    }
+    .about-us-des {
+        width: 100%
+    }
+}  
+
+@media (max-width: 1290px) {
+    .about-us-des {
+        width: 100%
+    }
+    .Portrait {
+        width: 100%;
+    }
+    .about-us-des {
+        width: 100%
+    }
+}  
