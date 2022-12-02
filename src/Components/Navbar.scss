@@ -41,3 +41,11 @@ Title-Name{
     padding-right: 20px;
     width: 40px;
 }
+
+//--------------------- Mobile
+
+@media (max-width: 880px) {
+    .Directories {
+        flex-direction: column;
+    }
+}

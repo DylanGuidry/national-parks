@@ -63,7 +63,7 @@ return (
                             </div>
                             <div class="Info-Container">
                                 <div class="Title-Box">
-                                    <h1 class='fees'>
+                                    <h1 class='fees directions'>
                                         DIRECTIONS
                                     </h1>
                                 </div>
