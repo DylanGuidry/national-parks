@@ -7,7 +7,6 @@ import Search from '../Images/Search-Icon.png'
 const SearchBarv2 = () => {
     const [searchInput, setSearchInput] = useState('')
     const [searchResults, setSearchResults] = useState([])
-    const navigate = useNavigate();
 
     function handleChange(e) {
         setSearchInput(e.target.value)
