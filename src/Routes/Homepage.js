@@ -35,15 +35,12 @@ export const Homepage = () => {
                     <section class='Overall-Images'>
                         <button class='Image-Card'>
                             <img class='Images' src={Yosemite}></img>
-                            <section class='top-right'>Yosemite National Park</section>
                         </button>
                         <button class='Image-Card'>
-                            <img class='Images' src={Yellowstone}></img>
-                            <section class='top-right-yellow'>Yellowstone National Park</section>
+                            <img class='Images' src={Yellowstone}></img>\
                         </button>
                         <button class='Image-Card'>
                             <img class='Images' src={Arches}></img>
-                            <section class='top-right-arches'>Arches National Park</section>
                         </button>
                     </section>
             </section>
